@@ -35,6 +35,8 @@ public class DataGenerator {
 	public DataGenerator(int n, int m, int totalSize) {
 		this.n = n; 
 		this.m = m;
+		
+
 		// In computing MaxRangeValue, I just picked the value 10 arbitrarily in 
 		// the next expression. Think about better possibilities, perhaps involving
 		// n and m too... 
@@ -57,7 +59,7 @@ public class DataGenerator {
 				//HashSet<Integer> set = new HashSet<>(); 
 				Set2<Integer> set = new Set2<>(); 
 				while(set.size() != this.sizes[i][j]) {
-					set.add(this.rnd.nextInt(maxRangeValue));
+					set.add(this.rnd.nextInt(maxRangeValue*n));
 				}
 				// add a common value to sets in row 0
 				if (i==0) 

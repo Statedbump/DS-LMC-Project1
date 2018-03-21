@@ -31,5 +31,6 @@ public class Set2<E> extends AbstractMySet<E> {
 		   setClone.elements = (HashMap<E,E>) this.elements.clone(); 
 		   return setClone; 
 	   }
+	   
 
 }
