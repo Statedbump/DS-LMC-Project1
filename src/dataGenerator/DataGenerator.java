@@ -59,7 +59,7 @@ public class DataGenerator {
 				//HashSet<Integer> set = new HashSet<>(); 
 				Set2<Integer> set = new Set2<>(); 
 				while(set.size() != this.sizes[i][j]) {
-					set.add(this.rnd.nextInt(maxRangeValue*n));
+					set.add(this.rnd.nextInt(maxRangeValue*m));
 				}
 				// add a common value to sets in row 0
 				if (i==0) 

@@ -1,5 +1,6 @@
 package mySetImplementations;
 
+import java.lang.reflect.MalformedParametersException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -18,7 +19,8 @@ public class Set2<E> extends AbstractMySet<E> {
 	      return elements.containsValue(e);  
 	   } 
 	   public void add(E e) { 
-	      elements.put(e, e);  
+	      elements.put(e, e); 
+	     
 	   } 
 	   public void remove(E e) { 
 	      elements.remove(e); 
@@ -28,7 +30,7 @@ public class Set2<E> extends AbstractMySet<E> {
 	   }  
 	   public Object clone() throws CloneNotSupportedException { 
 		   Set2<E> setClone = new Set2<>(); 
-		   setClone.elements = (HashMap<E,E>) this.elements.clone(); 
+		   setClone.elements = (HashMap<E,E>)this.elements.clone(); 
 		   return setClone; 
 	   }
 	   

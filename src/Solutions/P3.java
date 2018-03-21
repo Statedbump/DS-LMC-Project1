@@ -18,36 +18,35 @@ public class P3<E> extends AbstractIntersectionFinder<E> {
 	}
 	//This implementation May only be used with type set 2
 	// I need to find a way to not accept if its not Set2 possibly throw an exception
-	@Override
-	public MySet<E> intersectSets(MySet<E>[] t) {
 
-		int m = t.length;
-		
-		ArrayList<E> allElements = this.setsToList(t);
-		allElements.sort(null);
-		
-		MySet<E> t1 = new Set1<E>(); 
-		E e  = allElements.get(0);
-		System.out.println(allElements.toString());
+	public MySet<E> intersectSets(MySet<E>[] set) {
 
-		
+		int m = set.length;
+		@SuppressWarnings("unchecked")
+		MySet<E> t = new Set2(); 
+		ArrayList<E> allElements = setsToList(set);
+		allElements.sort(null);         
+		E e = allElements.get(0); 
 		Integer c = 1;
 		for (int i=1; i < allElements.size(); i++) {
 		    if (allElements.get(i).equals(e)) 
 		       c++;
 		    else { 
-		       if (c == m) {
-		          t1.add(e); }   // m is as in the previous discussion
+		       if (c==m) { 
+		    	   t.add(e);
+		    	   System.out.println(e.toString());
+		    	   System.out.println(t.toString());
+		    	   }
+		             // m is as in the previous discussion
+		       
 		       e = allElements.get(i); 
 		       c = 1; 
 		    } 
 		}
 		if (c == m)
-		    t1.add(allElements.get(allElements.size()-1));
+		    t.add(allElements.get(allElements.size()-1));
 
-		
-		
-		return t1;
+		return t;
 	}
 	
 	public  ArrayList<E> setsToList(MySet<E>[] t){
