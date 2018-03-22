@@ -88,7 +88,7 @@ public class ExperimentController<E>{
 				(size, (strategy.getSum()/((float) repetitionsPerSize)))); 
 			}
 
-			System.out.println(size); 
+			//System.out.println(size); 
 
 		}
 	}

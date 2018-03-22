@@ -3,6 +3,7 @@ package Solutions;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 import interfaces.MySet;
 import mySetImplementations.Set2;
@@ -26,7 +27,7 @@ public class P4<E>  extends AbstractIntersectionFinder<E>{
 		     Integer c = map.getOrDefault(e, 0); 
 		     map.put(e, c+1); 
 		}
-		MySet<E> t1 = new Set2<E>(); 
+		Set2<E> t1 = new Set2<E>(); 
 		for (Map.Entry<E, Integer> entry : map.entrySet())
 		     if (entry.getValue() == t.length) 
 		        t1.add(entry.getKey());

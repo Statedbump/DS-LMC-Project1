@@ -57,16 +57,13 @@ extends ArrayList<Map.Entry<Integer, Float>> {
     
     @SuppressWarnings({ "rawtypes", "unchecked" })
 	public void runTrial(Object[][][] data) throws FileNotFoundException { 
-    	if(this.getStrategyName().equalsIgnoreCase("P1")) {
-    	Set1[] t = (Set1[]) union.Union(data, getStrategyName());
-    	strategy.intersectSets(t);
-    	}else if(this.getStrategyName().equalsIgnoreCase("P2")||
-    			this.getStrategyName().equalsIgnoreCase("P3")||
-    			this.getStrategyName().equalsIgnoreCase("P4")) {
-    		
-    		Set2[] t = (Set2[]) union.Union(data, getStrategyName());
-        	strategy.intersectSets(t);
-    	}
+    // this can be made simpler in a way that i dont have to always create them...
+    // talk to toher classmates to see if they can help me find my problem
+    	
+    	MySet[] t =  union.Union(data, getStrategyName());
+    	
+        strategy.intersectSets(t);
+    	
     }
     
     public void resetSum() { 

@@ -64,15 +64,6 @@ public class DataReader {
 			System.out.print(numbers[i] + "  "); 
 		System.out.println(); 
 	}
-	
-	
-	public int getN() {
-		return n;
-	}
-
-	public int getM() {
-		return m;
-	}
 
 
 }

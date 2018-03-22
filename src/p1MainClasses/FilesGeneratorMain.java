@@ -11,9 +11,9 @@ public class FilesGeneratorMain {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		if (args.length <= 3) {
-			int n = 3; 
-			int m = 5; 
-			int size = 300; 
+			int n = 20; 
+			int m = 50; 
+			int size = 50000; 
 			if (args.length >= 1) 
 				n = Integer.parseInt(args[0]); 
 			if (args.length >= 2) 

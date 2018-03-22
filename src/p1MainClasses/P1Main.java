@@ -6,7 +6,7 @@ import Solutions.P1P2;
 import Solutions.P3;
 import Solutions.P4;
 import dataGenerator.DataReader;
-
+import interfaces.MySet;
 import mySetImplementations.Set1;
 import mySetImplementations.Set2;
 
@@ -23,10 +23,10 @@ public class P1Main {
 		P4 intersec4 = new P4("P4");
 		
 		UnionOfSets union = new UnionOfSets();
-		Set1 [] arr = (Set1[]) union.Union(data,intersec1.getName());
-		Set2 [] arr2 = (Set2[]) union.Union(data,intersec2.getName());
-		Set2 [] arr3 = (Set2[]) union.Union(data,intersec3.getName());
-		Set2 [] arr4 = (Set2[]) union.Union(data,intersec4.getName());
+		MySet [] arr = union.Union(data,intersec1.getName());
+		MySet [] arr2 = union.Union(data,intersec2.getName());
+		MySet [] arr3 = union.Union(data,intersec3.getName());
+		MySet [] arr4 = union.Union(data,intersec4.getName());
 	
 		
 		

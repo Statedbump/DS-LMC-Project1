@@ -22,8 +22,8 @@ public class P3<E> extends AbstractIntersectionFinder<E> {
 	public MySet<E> intersectSets(MySet<E>[] set) {
 
 		int m = set.length;
-		@SuppressWarnings("unchecked")
-		MySet<E> t = new Set2(); 
+		
+		Set2<E> t = new Set2<E>(); 
 		ArrayList<E> allElements = setsToList(set);
 		allElements.sort(null);         
 		E e = allElements.get(0); 
@@ -34,11 +34,8 @@ public class P3<E> extends AbstractIntersectionFinder<E> {
 		    else { 
 		       if (c==m) { 
 		    	   t.add(e);
-		    	   System.out.println(e.toString());
-		    	   System.out.println(t.toString());
-		    	   }
+		    	  		    	   }
 		             // m is as in the previous discussion
-		       
 		       e = allElements.get(i); 
 		       c = 1; 
 		    } 

@@ -10,7 +10,7 @@ import Solutions.P4;
 
 public class P2Main {
 
-	private static int[] parms = {10,50,1000,50000,1000,200};
+	private static int[] parms = {20,50,1000,50000,1000,200};
 	// min size, max size, size increment, number of trials per size/strategy
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
