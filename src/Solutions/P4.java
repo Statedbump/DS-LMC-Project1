@@ -8,20 +8,34 @@ import java.util.Set;
 import interfaces.MySet;
 import mySetImplementations.Set2;
 import setIntersectionFinders.AbstractIntersectionFinder;
-
+/**
+ * 
+ * @author Luis M.Cintron Zayas
+ *
+ * @param <E>
+ */
 public class P4<E>  extends AbstractIntersectionFinder<E>{
 
 	public P4(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	/**
+	 * This is programer's 4 implementation, of intersectSets by counting frequency.
+	 * Here we take all the elements in the array of sets and add them to an ArrayList
+	 * After adding them to the list afterwards a  HashMap is created and elements will be put in that
+	 * map, if the element is there we get the value and add one to it if it isn't we get a default value of 0 and add one 
+	 * to the value when the element is added.
+	 * Then a set of type 2 will be created and in there we will add all the keys in the map that contain as its value
+	 * the number of crime events which is m 
+	 * This set is the return value
+	 * 
+	 */
 	@Override
 	public MySet<E> intersectSets(MySet<E>[] t) {
 		
 		ArrayList<E> allElements = setsToList(t);
-		allElements.sort(null);
-		
 		HashMap<E, Integer> map = new HashMap<E,Integer>(); 
 		for (E e : allElements) { 
 		     Integer c = map.getOrDefault(e, 0); 

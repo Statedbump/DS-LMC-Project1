@@ -9,43 +9,58 @@ import interfaces.MySet;
 import mySetImplementations.Set1;
 import mySetImplementations.Set2;
 import setIntersectionFinders.AbstractIntersectionFinder;
-
+/**
+ * 
+ * @author Luis M. Cintron Zayas
+ *
+ * @param <E>
+ */
 public class P3<E> extends AbstractIntersectionFinder<E> {
 
 	public P3(String name) {
 		super(name);
 		// TODO Auto-generated constructor stub
 	}
-	//This implementation May only be used with type set 2
-	// I need to find a way to not accept if its not Set2 possibly throw an exception
 
+	/**
+	 * This implementation of intersectSets is based on Programmer's 3 
+	 * solution. It takes the array of sets then adds every element into an ArrayList
+	 * That list is then sorted, after that we count the frequency of each element if it 
+	 * appears m times then that element is added to the Set of type Set2 
+	 */
 	public MySet<E> intersectSets(MySet<E>[] set) {
 
 		int m = set.length;
-		
+
 		Set2<E> t = new Set2<E>(); 
 		ArrayList<E> allElements = setsToList(set);
 		allElements.sort(null);         
 		E e = allElements.get(0); 
 		Integer c = 1;
 		for (int i=1; i < allElements.size(); i++) {
-		    if (allElements.get(i).equals(e)) 
-		       c++;
-		    else { 
-		       if (c==m) { 
-		    	   t.add(e);
-		    	  		    	   }
-		             // m is as in the previous discussion
-		       e = allElements.get(i); 
-		       c = 1; 
-		    } 
+			if (allElements.get(i).equals(e)) 
+				c++;
+			else { 
+				if (c==m) { 
+					t.add(e);
+				}
+
+				e = allElements.get(i); 
+				c = 1; 
+			} 
 		}
 		if (c == m)
-		    t.add(allElements.get(allElements.size()-1));
+			t.add(allElements.get(allElements.size()-1));
 
 		return t;
 	}
-	
+
+	/**
+	 * 
+	 * @param t
+	 * @return An arrayList containing all the elements in T
+	 * 
+	 */
 	public  ArrayList<E> setsToList(MySet<E>[] t){
 		ArrayList<E> theList = new ArrayList<E>();
 		for(int i = 0 ; i < t.length ; i++) {
@@ -53,10 +68,10 @@ public class P3<E> extends AbstractIntersectionFinder<E> {
 				theList.add(e);
 			}
 		}
-		
+
 		return theList;
-		
+
 	}
-	
+
 
 }

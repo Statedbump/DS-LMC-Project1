@@ -23,8 +23,8 @@ public class ExperimentController<E>{
 	private int repetitionsPerSize;    // experimental repetitions per size
 	private int incrementalSizeStep;   // change of sizes (size delta)
 	private int finalSize;             // last size to be tested
-	private int paramN;				   // Parameters of N
-	private int paramM;
+	private int paramN;				   // Parameters of the number of Companies N
+	private int paramM;                // Parameters of the number of crime events M
 	
 	private ArrayList<StrategiesTimeCollection<E>> resultsPerStrategy; 
 	
@@ -37,9 +37,6 @@ public class ExperimentController<E>{
 		finalSize = fs; 
 		resultsPerStrategy = new ArrayList<>(); 
 		
-		
-        //JPanel pane = new JPanel();      // this was intended for a progress bar....
-        //pane.setLayout(new FlowLayout());
 
 	}
 	
@@ -88,7 +85,7 @@ public class ExperimentController<E>{
 				(size, (strategy.getSum()/((float) repetitionsPerSize)))); 
 			}
 
-			//System.out.println(size); 
+			
 
 		}
 	}

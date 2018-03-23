@@ -8,7 +8,7 @@ import Solutions.P1P2;
 import Solutions.P3;
 import Solutions.P4;
 
-public class P2Main {
+public class Part2Main {
 
 	private static int[] parms = {20,50,1000,50000,1000,200};
 	// min size, max size, size increment, number of trials per size/strategy
@@ -26,6 +26,7 @@ public class P2Main {
 		// Parm4: final size to consider
 		// Parm5: incremental steps (size)
 		// Parm6: trials per size
+		
 		ExperimentController p2m = new ExperimentController(parms[0], parms[1], parms[2], parms[3], parms[4], parms[5]); 
 		
 	
