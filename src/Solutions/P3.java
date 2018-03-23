@@ -9,10 +9,10 @@ import setIntersectionFinders.AbstractIntersectionFinder;
  * Est# 841-14-1275
  * CIIC 4020- sec 030
  **/
+
 /**
  * 
  * @author Luis M. Cintron Zayas
- *
  * @param <E>
  */
 public class P3<E> extends AbstractIntersectionFinder<E> {
@@ -27,6 +27,8 @@ public class P3<E> extends AbstractIntersectionFinder<E> {
 	 * solution. It takes the array of sets then adds every element into an ArrayList
 	 * That list is then sorted, after that we count the frequency of each element if it 
 	 * appears m times then that element is added to the Set of type Set2 
+	 * @param <E>
+	 * @return Set2<E> 
 	 */
 	public MySet<E> intersectSets(MySet<E>[] set) {
 

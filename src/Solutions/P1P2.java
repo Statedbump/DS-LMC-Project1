@@ -13,6 +13,7 @@ import setIntersectionFinders.AbstractIntersectionFinder;
  * Est# 841-14-1275
  * CIIC 4020- sec 030
  **/
+
 /**
  * 
  * @author Luis M. Cintron Zayas
@@ -36,6 +37,8 @@ public class P1P2<E> extends AbstractIntersectionFinder<E> {
 	 * This implementation of the intersection finder is based on 
 	 * Programmers 1 and 2 solutions. If P1 is being implemented
 	 * then Set1 is used, if not Set2 is used.
+	 * @param <E>
+	 * @return Set1<E> if name is P1,Set2<E> if name is P2
 	 */
 	public MySet<E> intersectSets(MySet<E>[] t) {
 		

@@ -10,9 +10,7 @@ import mySetImplementations.Set2;
  * CIIC 4020- sec 030
  **/
 /**
- * 
  * @author Luis M. Cintron Zayas
- *
  * @param <E>
  */
 public class UnionOfSets<E> { 
@@ -20,19 +18,12 @@ public class UnionOfSets<E> {
 	
 	/**
 	 * 
-	 * This class is used to construct a set with the union of of all the given data Files ij, 
+	 * This class is used to construct a set with the union of of all the given data F_i_j, 
 	 * as specified by Mrs. Espargata's plan. Depending on which of the suggested
 	 * solutions we need it will initialize the sets inside as type Set1 or Set2
 	 * 
-	 * 
 	 */
-	
-	
-	
-	
-	
-	
-	
+
 	/**	 
 	 * @param data  
 	 * @param the String name  should be the name of the suggested solution P1,P2,P3 or P4

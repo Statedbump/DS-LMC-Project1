@@ -36,7 +36,8 @@ public class P4<E>  extends AbstractIntersectionFinder<E>{
 	 * Then a set of type 2 will be created and in there we will add all the keys in the map that contain as its value
 	 * the number of crime events which is m 
 	 * This set is the return value
-	 * 
+	 *  * @param <E>
+	 * @return Set2<E> 
 	 */
 	@Override
 	public MySet<E> intersectSets(MySet<E>[] t) {
