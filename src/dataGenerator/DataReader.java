@@ -1,9 +1,14 @@
 package dataGenerator;
 import java.io.File;
+
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 /**
  * 
  * @author pedroirivera-vega

@@ -4,7 +4,11 @@ import java.lang.reflect.Array;
 import java.util.Iterator;
 
 import interfaces.MySet;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 public abstract class AbstractMySet<E> implements MySet<E> {
 	public boolean isEmpty() { 
 		return size() == 0; 

@@ -8,7 +8,11 @@ import java.util.ArrayList;
 import java.util.Map;
 
 import dataGenerator.DataGenerator;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 /**
  * This class represents an object data type that is able to carry the 
  * necessary experiments to estimate execution times of particular 

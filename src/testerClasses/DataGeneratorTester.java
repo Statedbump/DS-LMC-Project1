@@ -6,7 +6,11 @@ import dataGenerator.DataGenerator;
 import dataGenerator.DataReader;
 import mySetImplementations.Set1;
 import p1MainClasses.UnionOfSets;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ **/
 public class DataGeneratorTester {
 
 	public static void main(String[] args) throws FileNotFoundException {

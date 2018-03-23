@@ -4,7 +4,11 @@ import interfaces.MySet;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 public class Set1<E> extends AbstractMySet<E> {
 	   private ArrayList<E> elements; 
 	   public Set1() { 

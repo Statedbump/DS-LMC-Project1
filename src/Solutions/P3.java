@@ -1,14 +1,14 @@
 package Solutions;
-
-import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.util.Scanner;
-
 import interfaces.MySet;
-import mySetImplementations.Set1;
 import mySetImplementations.Set2;
 import setIntersectionFinders.AbstractIntersectionFinder;
+
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ **/
 /**
  * 
  * @author Luis M. Cintron Zayas
@@ -30,7 +30,7 @@ public class P3<E> extends AbstractIntersectionFinder<E> {
 	 */
 	public MySet<E> intersectSets(MySet<E>[] set) {
 
-		int m = set.length;
+		int m = set.length; // length is also the amount of crime events
 
 		Set2<E> t = new Set2<E>(); 
 		ArrayList<E> allElements = setsToList(set);
@@ -56,11 +56,13 @@ public class P3<E> extends AbstractIntersectionFinder<E> {
 	}
 
 	/**
-	 * 
+	 * This Method is used to create an ArrayList containing each element in the array of sets so P3 can be properly
+	 * implemented
 	 * @param t
 	 * @return An arrayList containing all the elements in T
 	 * 
 	 */
+	
 	public  ArrayList<E> setsToList(MySet<E>[] t){
 		ArrayList<E> theList = new ArrayList<E>();
 		for(int i = 0 ; i < t.length ; i++) {

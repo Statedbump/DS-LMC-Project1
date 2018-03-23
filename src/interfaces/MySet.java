@@ -1,7 +1,11 @@
 package interfaces;
 
 import java.util.Iterator;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 public interface MySet<E> extends Iterable<E>, Cloneable { 
     /**
      * To get the current size of the set

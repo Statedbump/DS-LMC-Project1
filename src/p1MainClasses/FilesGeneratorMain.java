@@ -6,7 +6,11 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 import dataGenerator.DataGenerator;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 public class FilesGeneratorMain {
 
 	public static void main(String[] args) throws FileNotFoundException {

@@ -3,7 +3,11 @@ import java.util.HashSet;
 import java.util.Random;
 
 import mySetImplementations.Set2;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 /**
  * 
  * @author pedroirivera-vega

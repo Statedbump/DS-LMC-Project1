@@ -9,6 +9,12 @@ import interfaces.MySet;
 import mySetImplementations.Set2;
 import setIntersectionFinders.AbstractIntersectionFinder;
 /**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ **/
+
+/**
  * 
  * @author Luis M.Cintron Zayas
  *

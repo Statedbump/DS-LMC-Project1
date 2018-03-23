@@ -11,6 +11,11 @@ import mySetImplementations.Set1;
 import mySetImplementations.Set2;
 import p1MainClasses.UnionOfSets;
 
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 
 /**
  * An object of this type will contain the results of random experiments
@@ -57,10 +62,7 @@ extends ArrayList<Map.Entry<Integer, Float>> {
     
     @SuppressWarnings({ "rawtypes", "unchecked" })
 	public void runTrial(Object[][][] data) throws FileNotFoundException { 
-    // this can be made simpler in a way that i dont have to always create them...
-    // talk to toher classmates to see if they can help me find my problem
-    	
-    	MySet[] t =  union.Union(data, getStrategyName());
+        	MySet[] t =  union.Union(data, getStrategyName());
     	
         strategy.intersectSets(t);
     	

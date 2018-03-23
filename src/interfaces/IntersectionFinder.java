@@ -1,5 +1,9 @@
 package interfaces;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 /**
  * An object of this type is capable of finding the intersection of a family 
  * of sets of elements of a particular data type.

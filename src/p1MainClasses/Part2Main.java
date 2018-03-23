@@ -7,7 +7,11 @@ import ExperimentalClases.StrategiesTimeCollection;
 import Solutions.P1P2;
 import Solutions.P3;
 import Solutions.P4;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 public class Part2Main {
 
 	private static int[] parms = {20,50,1000,50000,1000,200};

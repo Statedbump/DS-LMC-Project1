@@ -6,7 +6,11 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 import interfaces.MySet;
-
+/**
+ * Luis M.Cintron Zayas
+ * Est# 841-14-1275
+ * CIIC 4020- sec 030
+ */
 public class Set2<E> extends AbstractMySet<E> {
 	   private HashMap<E, E> elements; 
 	   public Set2() { 
